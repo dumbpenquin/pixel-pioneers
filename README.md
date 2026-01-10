@@ -76,13 +76,5 @@ Mention them here:
 
 ---
 
-## 📈 Progress Tracking
-
-Briefly describe how your project progressed during the hackathon:
-- Initial idea
-- Major milestones
-- Final status
-
----
 
 
