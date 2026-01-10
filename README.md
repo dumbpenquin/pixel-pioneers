@@ -22,18 +22,16 @@
 
 ## 🧩 Problem Description
 
-Briefly describe the problem you are addressing.  
-Explain the background and why this problem is relevant.
-
+Many internet users, especially first-time and less-aware users, lack practical knowledge to identify and handle cyber fraud. They struggle to recognize scam messages, fake links, and fraudulent calls, and are unable to assess the risk of suspicious URLs, phone numbers, or SMS in real time. Information about different scam types, their warning signs, and official reporting channels is fragmented and difficult to understand. Additionally, users lack immediate guidance when they face a potential scam, increasing the chances of financial and identity-related losses.
 ---
 
 ## 💡 Proposed Solution
 
-Describe your solution clearly:
-- What is your approach?
-- How does it solve the problem?
-- Key idea behind the solution.
+To address the lack of cyber fraud awareness and real-time guidance, we developed an integrated cyber safety platform focused on education, prevention, and support. The core idea is to help users understand how scams work, identify risks quickly, and know what actions to take—all in one place.
 
+The platform includes interactive quizzes based on real-life scam scenarios, a Duolingo-style guided tutor with short lessons on different scam types, and a risk scanner to check URLs, phone numbers, or messages for potential threats. It also features a scam information directory explaining common frauds, warning signs, and official reporting channels, along with a chatbot that offers instant help and guidance.
+
+By combining awareness, real-time risk detection, and clear guidance, the solution reduces user vulnerability to cyber fraud and promotes safer digital behavior.
 ---
 
 ## ⚙️ Technology Stack
