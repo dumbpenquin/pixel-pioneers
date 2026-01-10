@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# 🧑‍💻 Code of Duty – Hackathon Submission
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Instructions:**  
+> Please edit this README by filling in the required details.  
+> Do **not** remove section headings.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Team Information
 
-## React Compiler
+- **Team Name:**  
+- **Team Members:**  
+  - Member 1 – Register No  
+  - Member 2 – Register No  
+  - Member 3 – Register No  
+  - Member 4 – Register No (if applicable)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- **Problem Domain:**  
+- **Selected Problem Statement:**  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧩 Problem Description
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Briefly describe the problem you are addressing.  
+Explain the background and why this problem is relevant.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 💡 Proposed Solution
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Describe your solution clearly:
+- What is your approach?
+- How does it solve the problem?
+- Key idea behind the solution.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚙️ Technology Stack
+
+List the tools and technologies used:
+- Programming Languages  
+- Frameworks / Libraries  
+- Tools / Platforms  
+
+Example:
+- HTML, CSS, JavaScript  
+- React / Flutter / Node.js  
+- Firebase / APIs (if any)
+
+---
+
+## 🖥️ Implementation Details
+
+Explain how your project works:
+- Overall workflow
+- Key features implemented
+- Any challenges faced and how you solved them
+
+---
+
+## 📂 Project Structure
+
+
+---
+
+## 🧪 Screenshots / Demo
+
+Add screenshots of your website or application inside the `screenshots/` folder.
+
+Mention them here:
+- Screenshot 1 – Description  
+- Screenshot 2 – Description  
+
+*(Screenshots are mandatory for evaluation)*
+
+---
+
+
