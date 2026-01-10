@@ -8,15 +8,15 @@
 
 ## 📌 Team Information
 
-- **Team Name:**  
+- **Team Name: PIXEL PIONEERS:**  
 - **Team Members:**  
-  - Member 1 – Register No  
-  - Member 2 – Register No  
-  - Member 3 – Register No  
-  - Member 4 – Register No (if applicable)
+  - Rubeba Nourin – Register No  
+  - Saniya George – Register No  
+  - Shivapriyya P S – Register No  
+  - Yunus Kumar S– Register No (if applicable)
 
-- **Problem Domain:**  
-- **Selected Problem Statement:**  
+- **Digital Vuulnerability:**  
+- **The rise of online transactions has led to an increase in cyber fraud and digital scams, especially impacting first-time and less-aware internet users. Limited digital literacy and lack of awareness about common fraud patterns make users vulnerable to online financial and identity-related risks.:**  
 
 ---
 
