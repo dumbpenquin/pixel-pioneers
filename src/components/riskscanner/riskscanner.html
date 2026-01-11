@@ -1,0 +1,46 @@
+<head>
+    <link rel="stylesheet" href="riskscanner.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="riskscanner.js"></script>
+</body>
+<section class="risk-scanner-container">
+    <div class="rl-card main-scanner">
+        <div class="scanner-header">
+            <span class="rl-number">02</span>
+            <div class="system-status">
+                <span class="pulse-icon"></span>
+                SYSTEM ACTIVE
+            </div>
+        </div>
+
+        <h1 class="scanner-title">THREAT SCANNER<span>.</span></h1>
+        <p class="scanner-subtitle">Enter any URL, phone number, or email to perform a heuristic risk analysis.</p>
+
+        <div class="input-module">
+            <div class="input-wrapper">
+                <input type="text" id="scan-query" placeholder="https://secure-login-bank.com..." />
+                <div class="input-glow"></div>
+            </div>
+            <button class="rl-btn-primary" onclick="initiateScan()">RUN DIAGNOSTICS</button>
+        </div>
+
+        <div id="scan-terminal" class="terminal-box hidden">
+            <div class="terminal-header">
+                <div class="terminal-dots"><span></span><span></span><span></span></div>
+                <span class="terminal-title">SECURITY_REPORT.LOG</span>
+            </div>
+            <div class="terminal-body">
+                <p id="line-1" class="log-line">>> Initializing Redlight Heuristics...</p>
+                <p id="line-2" class="log-line hidden">>> Checking global blacklists...</p>
+                <div id="final-result" class="final-report hidden">
+                    <h2 id="verdict-title">THREAT DETECTED</h2>
+                    <p id="verdict-desc">High-risk patterns identified in the provided string.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

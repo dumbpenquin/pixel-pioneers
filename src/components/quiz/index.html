@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BE AWARE | Cyber Awareness Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cyber-bg"></div>
+    <div class="glow-orb"></div>
+
+    <div class="main-container">
+        <header>
+            <div class="logo">BE AWARE<span>.</span></div>
+        </header>
+
+        <main class="quiz-card">
+            <div class="scanline"></div>
+
+            <div class="card-header">
+                <div class="q-meta">
+                    <span class="number-label">CASE ID:</span>
+                    <span id="q-number" class="number">01</span>
+                </div>
+                <div class="progress-container">
+                    <div id="progress-fill"></div>
+                </div>
+            </div>
+
+            <h1 class="main-title">THREAT ANALYSIS</h1>
+
+            <div class="question-container">
+                <div class="corner-tl"></div><div class="corner-tr"></div>
+                <div class="corner-bl"></div><div class="corner-br"></div>
+                
+                <div class="alert-header">
+                    <span class="pulse-dot"></span>
+                    <span class="alert-text">INCOMING MESSAGE FOR REVIEW</span>
+                </div>
+                <p id="question-text">Initializing security protocols...</p>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-scam" onclick="checkAnswer(true)">
+                    <span class="btn-inner">DETECT SCAM</span>
+                </button>
+                <button class="btn btn-safe" onclick="checkAnswer(false)">
+                    <span class="btn-inner">MARK SAFE</span>
+                </button>
+            </div>
+
+            <div class="card-footer">
+                <div id="feedback" class="feedback-box hidden"></div>
+                <button id="next-btn" class="next-step hidden" onclick="loadQuestion()">NEXT MODULE ↗</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

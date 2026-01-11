@@ -1,0 +1,200 @@
+const scams = [
+  {
+    id: 1,
+    name: "Aadhaar / PAN Misuse",
+    category: "Identity",
+    details: "Fake verification messages asking for Aadhaar or PAN details.",
+    reportSteps: "Do not share documents. Report scam.",
+    riskLevel: "High",
+    bgImage: "images/id-scam.jpeg",
+    reportWebsite: "<a href='https://resident.uidai.gov.in' target='_blank'>https://resident.uidai.gov.in</a>",
+    contactNumber: "<a href='tel:1947'>1947</a>"
+  },
+  {
+    id: 2,
+    name: "Deepfake / AI Voice Call Scam",
+    category: "Social",
+    details: "AI-generated calls impersonating relatives or officials.",
+    reportSteps: "Verify identity before sending money.",
+    riskLevel: "High",
+    bgImage: "images/deepfake.jpeg",
+    reportWebsite: "<a href='https://www.cert-in.org.in' target='_blank'>https://www.cert-in.org.in</a>",
+    contactNumber: "<a href='tel:1800114949'>1800114949</a>"
+  },
+  {
+    id: 3,
+    name: "Fake Customer Care Scam",
+    category: "Financial",
+    details: "Fraudsters pose as customer care executives and steal money.",
+    reportSteps: "Disconnect call and report fake number.",
+    riskLevel: "High",
+    bgImage: "images/customer-care.jpeg",
+    reportWebsite: "<a href='https://www.cert-in.org.in' target='_blank'>https://www.cert-in.org.in</a>",
+    contactNumber: "<a href='tel:1800114949'>1800114949</a>"
+  },
+  {
+    id: 4,
+    name: "Fake Job Offer",
+    category: "Job",
+    details: "High salary job offers with no interview, asking for registration or processing fees.",
+    reportSteps: "Do not pay fees. Report to cybercrime portal.",
+    riskLevel: "Medium",
+    bgImage: "images/job-scam.jpeg",
+    reportWebsite: "<a href='https://www.ncs.gov.in' target='_blank'>https://www.ncs.gov.in</a>",
+    contactNumber: "<a href='tel:18004251514'>18004251514</a>"
+  },
+  {
+    id: 5,
+    name: "Fake Online Shopping Website",
+    category: "Shopping",
+    details: "Websites offering huge discounts but never deliver products.",
+    reportSteps: "Report website and contact bank.",
+    riskLevel: "Medium",
+    bgImage: "images/shopping-scam.jpeg",
+    reportWebsite: "<a href='https://consumerhelpline.gov.in' target='_blank'>https://consumerhelpline.gov.in</a>",
+    contactNumber: "<a href='tel:1915'>1915</a>"
+  },
+  {
+    id: 6,
+    name: "Investment / Trading Scam",
+    category: "Investment",
+    details: "Fake crypto, stock trading tips promising guaranteed returns.",
+    reportSteps: "Do not invest. Report platform.",
+    riskLevel: "High",
+    bgImage: "images/investment.jpeg",
+    reportWebsite: "<a href='https://www.sebi.gov.in' target='_blank'>https://www.sebi.gov.in</a>",
+    contactNumber: "<a href='tel:1800227575'>1800227575</a>"
+  },
+  {
+    id: 7,
+    name: "Loan App Scam",
+    category: "Investment",
+    details: "Fake instant loan apps that access contacts and blackmail users.",
+    reportSteps: "Uninstall app and report immediately.",
+    riskLevel: "High",
+    bgImage: "images/loan-app.jpeg",
+    reportWebsite: "<a href='https://www.rbi.org.in' target='_blank'>https://www.rbi.org.in</a>",
+    contactNumber: "<a href='tel:1800224400'>1800224400</a>"
+  },
+  {
+    id: 8,
+    name: "Lottery / Prize Winning Scam",
+    category: "Identity",
+    details: "Messages claiming you won a prize and asking for fees.",
+    reportSteps: "Ignore messages and report.",
+    riskLevel: "High",
+    bgImage: "images/lottery.jpeg",
+    reportWebsite: "<a href='https://www.mha.gov.in' target='_blank'>https://www.mha.gov.in</a>",
+    contactNumber: "<a href='tel:1800117777'>1800117777</a>"
+  },
+  {
+    id: 9,
+    name: "OLX / Marketplace Scam",
+    category: "Shopping",
+    details: "Fake buyers send payment links or QR codes to steal money.",
+    reportSteps: "Do not scan QR codes. Report seller/buyer.",
+    riskLevel: "High",
+    bgImage: "images/marketplace.jpeg",
+    reportWebsite: "<a href='https://www.olx.in/support' target='_blank'>https://www.olx.in/support</a>",
+    contactNumber: "<a href='tel:18001234567'>18001234567</a>"
+  },
+  {
+    id: 10,
+    name: "Online Task / Like & Earn Scam",
+    category: "Job",
+    details: "Small initial payments, later demands investment to continue earning.",
+    reportSteps: "Stop communication and report.",
+    riskLevel: "High",
+    bgImage: "images/task-scam.jpeg",
+    reportWebsite: "<a href='https://www.cybercrime.gov.in' target='_blank'>https://www.cybercrime.gov.in</a>",
+    contactNumber: "<a href='tel:1930'>1930</a>"
+  },
+  {
+    id: 11,
+    name: "OTP & KYC Fraud",
+    category: "Financial",
+    details: "Scammers ask for OTP, CVV, or fake KYC updates to access bank accounts.",
+    reportSteps: "Never share OTP. Inform bank and report.",
+    riskLevel: "High",
+    bgImage: "images/otp-kyc.jpeg",
+    reportWebsite: "<a href='https://www.rbi.org.in' target='_blank'>https://www.rbi.org.in</a>",
+    contactNumber: "<a href='tel:1800224400'>1800224400</a>"
+  },
+  {
+    id: 12,
+    name: "Phishing Scam",
+    category: "Financial",
+    details: "Fake emails, SMS, or WhatsApp messages pretending to be banks or government bodies.",
+    reportSteps: "Do not click links. Inform your bank.",
+    riskLevel: "High",
+    bgImage: "images/phishing.jpeg",
+    reportWebsite: "<a href='https://www.cert-in.org.in' target='_blank'>https://www.cert-in.org.in</a>",
+    contactNumber: "<a href='tel:1800114949'>1800114949</a>"
+  },
+  {
+    id: 13,
+    name: "Remote Access App Scam",
+    category: "Social",
+    details: "Scammers ask users to install AnyDesk or TeamViewer.",
+    reportSteps: "Uninstall app and contact bank.",
+    riskLevel: "High",
+    bgImage: "images/remote-access.jpeg",
+    reportWebsite: "<a href='https://www.cert-in.org.in' target='_blank'>https://www.cert-in.org.in</a>",
+    contactNumber: "<a href='tel:1800114949'>1800114949</a>"
+  },
+  {
+    id: 14,
+    name: "Rental / PG Scam",
+    category: "Shopping",
+    details: "Fake property listings asking advance payments.",
+    reportSteps: "Avoid advance payments. Report listing.",
+    riskLevel: "Medium",
+    bgImage: "images/rent-scam.jpeg",
+    reportWebsite: "<a href='https://www.consumerhelpline.gov.in' target='_blank'>https://www.consumerhelpline.gov.in</a>",
+    contactNumber: "<a href='tel:1915'>1915</a>"
+  },
+  {
+    id: 15,
+    name: "Romance / Dating Scam",
+    category: "Social",
+    details: "Emotional manipulation through dating apps to extract money.",
+    reportSteps: "Block user and report.",
+    riskLevel: "Medium",
+    bgImage: "images/romance.jpeg",
+    reportWebsite: "<a href='https://www.cybercrime.gov.in' target='_blank'>https://www.cybercrime.gov.in</a>",
+    contactNumber: "<a href='tel:1930'>1930</a>"
+  },
+  {
+    id: 16,
+    name: "SIM Swap Fraud",
+    category: "Identity",
+    details: "SIM is deactivated to gain access to bank accounts.",
+    reportSteps: "Contact mobile operator and bank immediately.",
+    riskLevel: "High",
+    bgImage: "images/sim-swap.jpeg",
+    reportWebsite: "<a href='https://www.dot.gov.in' target='_blank'>https://www.dot.gov.in</a>",
+    contactNumber: "<a href='tel:1800110420'>1800110420</a>"
+  },
+  {
+    id: 17,
+    name: "Social Media Account Hacking",
+    category: "Social",
+    details: "Fake login links used to hijack accounts.",
+    reportSteps: "Change password and enable 2FA.",
+    riskLevel: "Medium",
+    bgImage: "images/social-hack.jpeg",
+    reportWebsite: "<a href='https://www.cybercrime.gov.in' target='_blank'>https://www.cybercrime.gov.in</a>",
+    contactNumber: "<a href='tel:1930'>1930</a>"
+  },
+  {
+    id: 18,
+    name: "UPI / QR Code Scam",
+    category: "Financial",
+    details: "Fake ‘receive money’ requests or QR codes that debit money.",
+    reportSteps: "Block transaction immediately and contact bank.",
+    riskLevel: "High",
+    bgImage: "images/upi-qr.jpeg",
+    reportWebsite: "<a href='https://www.npci.org.in' target='_blank'>https://www.npci.org.in</a>",
+    contactNumber: "<a href='tel:1800222226'>1800222226</a>"
+  }
+];
