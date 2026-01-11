@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Fraud Awareness</title>
+    <link rel="stylesheet" href="scams.css">
+</head>
+<body>
+    <header>
+        <h1>COMMON FRAUDS & SCAMS</h1>
+    </header>
+
+    <div class="controls">
+        <input type="text" id="searchBox" placeholder="Search scam...">
+
+        <select id="categoryFilter">
+            <option value="All">All Categories</option>
+            <option value="Financial">Financial</option>
+            <option value="Job">Job</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Investment">Investment</option>
+            <option value="Identity">Identity</option>
+            <option value="Social">Social</option>
+        </select>
+
+        <select id="riskFilter">
+            <option value="All">All Risk Levels</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+
+        <select id="sortSelect">
+            <option value="name-asc">Name (A–Z)</option>
+            <option value="name-desc">Name (Z–A)</option>
+            <option value="risk-high-low">Risk (High → Low)</option>
+            <option value="risk-low-high">Risk (Low → High)</option>
+        </select>
+    </div>
+
+    <section id="scamList">
+        <!-- Scam cards will appear here -->
+    </section>
+
+    <section id="scamDetails">
+        <h2>Click a scam to see details</h2>
+    </section>
+
+    <script src="scams.js"></script>
+    <script src="mains.js"></script>
+</body>
+</html>
